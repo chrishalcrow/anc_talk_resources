@@ -18,7 +18,7 @@
     "href": "index.html#cool-stuff",
     "title": "Resources for SpikeInterface talk",
     "section": "Cool stuff",
-    "text": "Cool stuff\n\nWidgets module: https://spikeinterface.readthedocs.io/en/stable/modules/widgets.html\nPaper about compression: https://iopscience.iop.org/article/10.1088/1741-2552/acf5a4/meta\nDocs about the preprocessing pipeline: https://spikeinterface.readthedocs.io/en/latest/modules/preprocessing.html#the-preprocessing-pipeline\nDocs about containerization: https://spikeinterface.readthedocs.io/en/latest/modules/sorters.html#running-sorters-in-docker-singularity-containers\nSortingView: https://github.com/magland/sortingview"
+    "text": "Cool stuff\n\nLUSSAC: https://www.biorxiv.org/content/10.1101/2022.02.08.479192v2\nWidgets module: https://spikeinterface.readthedocs.io/en/stable/modules/widgets.html\nPaper about compression: https://iopscience.iop.org/article/10.1088/1741-2552/acf5a4/meta\nDocs about the preprocessing pipeline: https://spikeinterface.readthedocs.io/en/latest/modules/preprocessing.html#the-preprocessing-pipeline\nDocs about containerization: https://spikeinterface.readthedocs.io/en/latest/modules/sorters.html#running-sorters-in-docker-singularity-containers\nSortingView: https://github.com/magland/sortingview"
   },
   {
     "objectID": "index.html#motion-correction",

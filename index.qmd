@@ -19,6 +19,7 @@ format:
 
 ## Cool stuff
 
+- LUSSAC: <https://www.biorxiv.org/content/10.1101/2022.02.08.479192v2>
 - Widgets module: <https://spikeinterface.readthedocs.io/en/stable/modules/widgets.html>
 - Paper about compression: <https://iopscience.iop.org/article/10.1088/1741-2552/acf5a4/meta>
 - Docs about the preprocessing pipeline: <https://spikeinterface.readthedocs.io/en/latest/modules/preprocessing.html#the-preprocessing-pipeline>

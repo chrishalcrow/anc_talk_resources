@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Resources for SpikeInterface talk",
+    "section": "",
+    "text": "SpikeInterface github page: https://github.com/spikeinterface/spikeinterface/\nSpikeInterface docs: https://spikeinterface.readthedocs.io/en/stable/"
+  },
+  {
+    "objectID": "index.html#getting-started",
+    "href": "index.html#getting-started",
+    "title": "Resources for SpikeInterface talk",
+    "section": "Getting started",
+    "text": "Getting started\n\nSupported recording and sorting formats: https://spikeinterface.readthedocs.io/en/stable/modules/extractors.html#supported-file-formats\n\nSupported sorters: https://spikeinterface.readthedocs.io/en/stable/modules/sorters.html#supported-spike-sorters\nThe SortingAnalyzer: https://spikeinterface.readthedocs.io/en/stable/tutorials/core/plot_4_sorting_analyzer.html#sphx-glr-tutorials-core-plot-4-sorting-analyzer-py\nIntro to SpikeInterface course: https://chrishalcrow.github.io/intro_to_spikeinterface/"
+  },
+  {
+    "objectID": "index.html#cool-stuff",
+    "href": "index.html#cool-stuff",
+    "title": "Resources for SpikeInterface talk",
+    "section": "Cool stuff",
+    "text": "Cool stuff\n\nWidgets module: https://spikeinterface.readthedocs.io/en/stable/modules/widgets.html\nPaper about compression: https://iopscience.iop.org/article/10.1088/1741-2552/acf5a4/meta\nDocs about the preprocessing pipeline: https://spikeinterface.readthedocs.io/en/latest/modules/preprocessing.html#the-preprocessing-pipeline\nDocs about containerization: https://spikeinterface.readthedocs.io/en/latest/modules/sorters.html#running-sorters-in-docker-singularity-containers\nSortingView: https://github.com/magland/sortingview"
+  },
+  {
+    "objectID": "index.html#motion-correction",
+    "href": "index.html#motion-correction",
+    "title": "Resources for SpikeInterface talk",
+    "section": "Motion correction",
+    "text": "Motion correction\n\nDREDGE motion correction paper: https://www.nature.com/articles/s41592-025-02614-5\nMEDICINE motion correction paper: https://www.eneuro.org/content/12/3/ENEURO.0529-24.2025\nSpikeInterface motion correction docs: https://spikeinterface.readthedocs.io/en/latest/how_to/handle_drift.html\nNick’s deliberately drifty dataset: https://figshare.com/articles/dataset/_Imposed_motion_datasets_from_Steinmetz_et_al_Science_2021/14024495"
+  },
+  {
+    "objectID": "index.html#automated-curation",
+    "href": "index.html#automated-curation",
+    "title": "Resources for SpikeInterface talk",
+    "section": "Automated curation",
+    "text": "Automated curation\n\nUnitRefine preprint: https://www.biorxiv.org/content/10.1101/2025.03.30.645770v1\nUnitRefine tutorials: https://spikeinterface.readthedocs.io/en/stable/tutorials_custom_index.html#automated-curation-tutorials\nDocs about quality metrics: https://spikeinterface.readthedocs.io/en/stable/modules/qualitymetrics.html"
+  }
+]

@@ -9,6 +9,7 @@ format:
 
 - SpikeInterface github page: <https://github.com/spikeinterface/spikeinterface/>
 - SpikeInterface docs: <https://spikeinterface.readthedocs.io/en/stable/>
+- SpikeInterface-GUI: <https://github.com/spikeinterface/spikeinterface-gui>
 
 ## Getting started
 

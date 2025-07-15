@@ -14,6 +14,13 @@
     "text": "Getting started\n\nSupported recording and sorting formats: https://spikeinterface.readthedocs.io/en/stable/modules/extractors.html#supported-file-formats\n\nSupported sorters: https://spikeinterface.readthedocs.io/en/stable/modules/sorters.html#supported-spike-sorters\nThe SortingAnalyzer: https://spikeinterface.readthedocs.io/en/stable/tutorials/core/plot_4_sorting_analyzer.html#sphx-glr-tutorials-core-plot-4-sorting-analyzer-py\nIntro to SpikeInterface course: https://chrishalcrow.github.io/intro_to_spikeinterface/"
   },
   {
+    "objectID": "index.html#dandi-nwb-stuff",
+    "href": "index.html#dandi-nwb-stuff",
+    "title": "Resources for SpikeInterface talk",
+    "section": "DANDI / NWB stuff",
+    "text": "DANDI / NWB stuff\nExample code to stream a recording from DANDI:\nfrom dandi.dandiapi import DandiAPIClient\nimport spikeinterface.full as si\n\n\nwith DandiAPIClient() as client:\n    dandiset = client.get_dandiset(\"001290\") # Charlie Windolf - pulsating probes\n    asset = list(dandiset.get_assets())[0]\n    print(f\"getting asset: {asset.path}\")\n    s3_url = asset.get_content_url(follow_redirects=1, strip_query=True)\n\nrecording = si.read_nwb_recording(\n    file_path = s3_url, \n    stream_mode='fsspec', \n)\n\n%matplotlib widget\nsi.plot_traces(\n    si.common_reference(\n        si.bandpass_filter(\n            recording.remove_channels([\"AP86\"])\n        )\n    ),\n    backend=\"ipywidgets\",\n    order_channel_by_depth=True, \n    clim=(-30,30),\n)\nExample code to stream a sorting from DANDI:\n\nfrom dandi.dandiapi import DandiAPIClient\nimport spikeinterface.full as si\n\ndandiset_id = '000582'  # Haagen Waade\nfilepath = 'sub-10073/sub-10073_ses-17010302_behavior+ecephys.nwb'  # 450 kB file\nwith DandiAPIClient() as client:\n    asset = client.get_dandiset(dandiset_id, 'draft').get_asset_by_path(filepath)\n    s3_url = asset.get_content_url(follow_redirects=1, strip_query=True)\n\nsorting = si.read_nwb_sorting(\n    file_path = s3_url, \n    stream_mode='fsspec', \n    electrical_series_path=\"acquisition/ElectricalSeries\",\n)"
+  },
+  {
     "objectID": "index.html#cool-stuff",
     "href": "index.html#cool-stuff",
     "title": "Resources for SpikeInterface talk",

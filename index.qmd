@@ -16,9 +16,15 @@ format:
 
 # Spike Sorting
 
-- SpikeInterface github page: <https://github.com/spikeinterface/spikeinterface/>
+- SpikeInterface GitHub page: <https://github.com/spikeinterface/spikeinterface/>
 - Intro to SpikeInterface course: <https://chrishalcrow.github.io/intro_to_spikeinterface/>
 - SpikeInterface docs: <https://spikeinterface.readthedocs.io/en/stable/>
 - SpikeInterface-GUI: <https://github.com/spikeinterface/spikeinterface-gui>
 
 
+# Answering scientific questions
+
+- Pynapple GitHub page: <https://github.com/pynapple-org/pynapple>
+- Intro to Pynapple: <https://pynapple.org/user_guide/01_introduction_to_pynapple.html>
+- Pynapple docs: <https://pynapple.org>
+- Pynapple tutorials: <https://pynapple.org/examples.html>

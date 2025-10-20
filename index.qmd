@@ -10,7 +10,7 @@ format:
 # Open data
 
 - **Neurosift**. Better search for DANDI, OpenNeuro and EMBER: <https://neurosift.app/>
-- **EBRAINS**. Another open data repository: <https://www.ebrains.eu/>
+- **EBRAINS**. Another open data repository: <https://search.kg.ebrains.eu/?category=Dataset>
 - A nice DANDIset to browse: <https://dandiarchive.org/dandiset/001530/draft/files?location=001530/nwb-behaviour-processed-raw/PG028&page=1>
 - **OpenScore databook**. Example from the Allen Institute of using DANDIsets for science: <https://alleninstitute.github.io/openscope_databook/intro.html>
 

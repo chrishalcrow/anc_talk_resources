@@ -24,6 +24,7 @@ format:
 
 # Answering scientific questions
 
+- talk notebook: <https://colab.research.google.com/drive/1FMGyBAwho6YV6SGWXAXAgBohVGCSW9Im?usp=sharing>
 - Pynapple GitHub page: <https://github.com/pynapple-org/pynapple>
 - Intro to Pynapple: <https://pynapple.org/user_guide/01_introduction_to_pynapple.html>
 - Pynapple docs: <https://pynapple.org>

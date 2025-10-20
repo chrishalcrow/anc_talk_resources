@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Resources for SpikeInterface talk</title>
+<title>Resources for ANC talk</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -116,7 +82,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Resources for SpikeInterface talk</h1>
+<h1 class="title">Resources for ANC talk</h1>
 </div>
 
 
@@ -133,94 +99,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<section id="open-data" class="level1">
+<h1>Open data</h1>
+<ul>
+<li><strong>Neurosift</strong>. Better search for DANDI, OpenNeuro and EMBER: <a href="https://neurosift.app/" class="uri">https://neurosift.app/</a></li>
+<li><strong>EBRAINS</strong>. Another open data repository: <a href="https://www.ebrains.eu/" class="uri">https://www.ebrains.eu/</a></li>
+<li>A nice DANDIset to browse: <a href="https://dandiarchive.org/dandiset/001530/draft/files?location=001530/nwb-behaviour-processed-raw/PG028&amp;page=1" class="uri">https://dandiarchive.org/dandiset/001530/draft/files?location=001530/nwb-behaviour-processed-raw/PG028&amp;page=1</a></li>
+<li><strong>OpenScore databook</strong>. Example from the Allen Institute of using DANDIsets for science: <a href="https://alleninstitute.github.io/openscope_databook/intro.html" class="uri">https://alleninstitute.github.io/openscope_databook/intro.html</a></li>
+</ul>
+</section>
+<section id="spike-sorting" class="level1">
+<h1>Spike Sorting</h1>
 <ul>
 <li>SpikeInterface github page: <a href="https://github.com/spikeinterface/spikeinterface/" class="uri">https://github.com/spikeinterface/spikeinterface/</a></li>
+<li>Intro to SpikeInterface course: <a href="https://chrishalcrow.github.io/intro_to_spikeinterface/" class="uri">https://chrishalcrow.github.io/intro_to_spikeinterface/</a></li>
 <li>SpikeInterface docs: <a href="https://spikeinterface.readthedocs.io/en/stable/" class="uri">https://spikeinterface.readthedocs.io/en/stable/</a></li>
 <li>SpikeInterface-GUI: <a href="https://github.com/spikeinterface/spikeinterface-gui" class="uri">https://github.com/spikeinterface/spikeinterface-gui</a></li>
-</ul>
-<section id="getting-started" class="level2">
-<h2 class="anchored" data-anchor-id="getting-started">Getting started</h2>
-<ul>
-<li>Supported recording and sorting formats: <a href="https://spikeinterface.readthedocs.io/en/stable/modules/extractors.html#supported-file-formats" class="uri">https://spikeinterface.readthedocs.io/en/stable/modules/extractors.html#supported-file-formats</a><br>
-</li>
-<li>Supported sorters: <a href="https://spikeinterface.readthedocs.io/en/stable/modules/sorters.html#supported-spike-sorters" class="uri">https://spikeinterface.readthedocs.io/en/stable/modules/sorters.html#supported-spike-sorters</a></li>
-<li>The SortingAnalyzer: <a href="https://spikeinterface.readthedocs.io/en/stable/tutorials/core/plot_4_sorting_analyzer.html#sphx-glr-tutorials-core-plot-4-sorting-analyzer-py" class="uri">https://spikeinterface.readthedocs.io/en/stable/tutorials/core/plot_4_sorting_analyzer.html#sphx-glr-tutorials-core-plot-4-sorting-analyzer-py</a></li>
-<li>Intro to SpikeInterface course: <a href="https://chrishalcrow.github.io/intro_to_spikeinterface/" class="uri">https://chrishalcrow.github.io/intro_to_spikeinterface/</a></li>
-</ul>
-</section>
-<section id="dandi-nwb-stuff" class="level2">
-<h2 class="anchored" data-anchor-id="dandi-nwb-stuff">DANDI / NWB stuff</h2>
-<p>Example code to stream a recording from DANDI:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dandi.dandiapi <span class="im">import</span> DandiAPIClient</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> spikeinterface.full <span class="im">as</span> si</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> DandiAPIClient() <span class="im">as</span> client:</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    dandiset <span class="op">=</span> client.get_dandiset(<span class="st">"001290"</span>) <span class="co"># Charlie Windolf - pulsating probes</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    asset <span class="op">=</span> <span class="bu">list</span>(dandiset.get_assets())[<span class="dv">0</span>]</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"getting asset: </span><span class="sc">{</span>asset<span class="sc">.</span>path<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    s3_url <span class="op">=</span> asset.get_content_url(follow_redirects<span class="op">=</span><span class="dv">1</span>, strip_query<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>recording <span class="op">=</span> si.read_nwb_recording(</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    file_path <span class="op">=</span> s3_url, </span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    stream_mode<span class="op">=</span><span class="st">'fsspec'</span>, </span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib widget</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>si.plot_traces(</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    si.common_reference(</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>        si.bandpass_filter(</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>            recording.remove_channels([<span class="st">"AP86"</span>])</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>        )</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    ),</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    backend<span class="op">=</span><span class="st">"ipywidgets"</span>,</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    order_channel_by_depth<span class="op">=</span><span class="va">True</span>, </span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    clim<span class="op">=</span>(<span class="op">-</span><span class="dv">30</span>,<span class="dv">30</span>),</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Example code to stream a sorting from DANDI:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dandi.dandiapi <span class="im">import</span> DandiAPIClient</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> spikeinterface.full <span class="im">as</span> si</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>dandiset_id <span class="op">=</span> <span class="st">'000582'</span>  <span class="co"># Haagen Waade</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>filepath <span class="op">=</span> <span class="st">'sub-10073/sub-10073_ses-17010302_behavior+ecephys.nwb'</span>  <span class="co"># 450 kB file</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> DandiAPIClient() <span class="im">as</span> client:</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    asset <span class="op">=</span> client.get_dandiset(dandiset_id, <span class="st">'draft'</span>).get_asset_by_path(filepath)</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    s3_url <span class="op">=</span> asset.get_content_url(follow_redirects<span class="op">=</span><span class="dv">1</span>, strip_query<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>sorting <span class="op">=</span> si.read_nwb_sorting(</span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    file_path <span class="op">=</span> s3_url, </span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    stream_mode<span class="op">=</span><span class="st">'fsspec'</span>, </span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    electrical_series_path<span class="op">=</span><span class="st">"acquisition/ElectricalSeries"</span>,</span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="cool-stuff" class="level2">
-<h2 class="anchored" data-anchor-id="cool-stuff">Cool stuff</h2>
-<ul>
-<li>uv: <a href="https://docs.astral.sh/uv/guides/install-python/" class="uri">https://docs.astral.sh/uv/guides/install-python/</a></li>
-<li>LUSSAC: <a href="https://www.biorxiv.org/content/10.1101/2022.02.08.479192v2" class="uri">https://www.biorxiv.org/content/10.1101/2022.02.08.479192v2</a></li>
-<li>Widgets module: <a href="https://spikeinterface.readthedocs.io/en/stable/modules/widgets.html" class="uri">https://spikeinterface.readthedocs.io/en/stable/modules/widgets.html</a></li>
-<li>Paper about compression: <a href="https://iopscience.iop.org/article/10.1088/1741-2552/acf5a4/meta" class="uri">https://iopscience.iop.org/article/10.1088/1741-2552/acf5a4/meta</a></li>
-<li>Docs about the preprocessing pipeline: <a href="https://spikeinterface.readthedocs.io/en/latest/modules/preprocessing.html#the-preprocessing-pipeline" class="uri">https://spikeinterface.readthedocs.io/en/latest/modules/preprocessing.html#the-preprocessing-pipeline</a></li>
-<li>Docs about containerization: <a href="https://spikeinterface.readthedocs.io/en/latest/modules/sorters.html#running-sorters-in-docker-singularity-containers" class="uri">https://spikeinterface.readthedocs.io/en/latest/modules/sorters.html#running-sorters-in-docker-singularity-containers</a></li>
-<li>SortingView: <a href="https://github.com/magland/sortingview" class="uri">https://github.com/magland/sortingview</a></li>
-</ul>
-</section>
-<section id="motion-correction" class="level2">
-<h2 class="anchored" data-anchor-id="motion-correction">Motion correction</h2>
-<ul>
-<li>DREDGE motion correction paper: <a href="https://www.nature.com/articles/s41592-025-02614-5" class="uri">https://www.nature.com/articles/s41592-025-02614-5</a></li>
-<li>MEDICINE motion correction paper: <a href="https://www.eneuro.org/content/12/3/ENEURO.0529-24.2025" class="uri">https://www.eneuro.org/content/12/3/ENEURO.0529-24.2025</a></li>
-<li>SpikeInterface motion correction docs: <a href="https://spikeinterface.readthedocs.io/en/latest/how_to/handle_drift.html" class="uri">https://spikeinterface.readthedocs.io/en/latest/how_to/handle_drift.html</a></li>
-<li>Nick’s deliberately drifty dataset: <a href="https://figshare.com/articles/dataset/_Imposed_motion_datasets_from_Steinmetz_et_al_Science_2021/14024495" class="uri">https://figshare.com/articles/dataset/_Imposed_motion_datasets_from_Steinmetz_et_al_Science_2021/14024495</a></li>
-</ul>
-</section>
-<section id="automated-curation" class="level2">
-<h2 class="anchored" data-anchor-id="automated-curation">Automated curation</h2>
-<ul>
-<li>UnitRefine preprint: <a href="https://www.biorxiv.org/content/10.1101/2025.03.30.645770v1" class="uri">https://www.biorxiv.org/content/10.1101/2025.03.30.645770v1</a></li>
-<li>UnitRefine tutorials: <a href="https://spikeinterface.readthedocs.io/en/stable/tutorials_custom_index.html#automated-curation-tutorials" class="uri">https://spikeinterface.readthedocs.io/en/stable/tutorials_custom_index.html#automated-curation-tutorials</a></li>
-<li>Docs about quality metrics: <a href="https://spikeinterface.readthedocs.io/en/stable/modules/qualitymetrics.html" class="uri">https://spikeinterface.readthedocs.io/en/stable/modules/qualitymetrics.html</a></li>
 </ul>
 
 

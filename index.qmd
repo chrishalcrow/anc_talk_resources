@@ -1,5 +1,5 @@
 ---
-title: Resources for SpikeInterface talk
+title: Resources for ANC talk
 output: html_document
 theme: cosmo
 format:
@@ -7,92 +7,18 @@ format:
     toc: false
 ---
 
+# Open data
+
+- **Neurosift**. Better search for DANDI, OpenNeuro and EMBER: <https://neurosift.app/>
+- **EBRAINS**. Another open data repository: <https://www.ebrains.eu/>
+- A nice DANDIset to browse: <https://dandiarchive.org/dandiset/001530/draft/files?location=001530/nwb-behaviour-processed-raw/PG028&page=1>
+- **OpenScore databook**. Example from the Allen Institute of using DANDIsets for science: <https://alleninstitute.github.io/openscope_databook/intro.html>
+
+# Spike Sorting
+
 - SpikeInterface github page: <https://github.com/spikeinterface/spikeinterface/>
+- Intro to SpikeInterface course: <https://chrishalcrow.github.io/intro_to_spikeinterface/>
 - SpikeInterface docs: <https://spikeinterface.readthedocs.io/en/stable/>
 - SpikeInterface-GUI: <https://github.com/spikeinterface/spikeinterface-gui>
-
-## Getting started
-
-- Supported recording and sorting formats: <https://spikeinterface.readthedocs.io/en/stable/modules/extractors.html#supported-file-formats>  
-- Supported sorters: <https://spikeinterface.readthedocs.io/en/stable/modules/sorters.html#supported-spike-sorters>
-- The SortingAnalyzer: <https://spikeinterface.readthedocs.io/en/stable/tutorials/core/plot_4_sorting_analyzer.html#sphx-glr-tutorials-core-plot-4-sorting-analyzer-py>
-- Intro to SpikeInterface course: <https://chrishalcrow.github.io/intro_to_spikeinterface/>
-
-## DANDI / NWB stuff
-
-Example code to stream a recording from DANDI:
-
-``` python
-from dandi.dandiapi import DandiAPIClient
-import spikeinterface.full as si
-
-
-with DandiAPIClient() as client:
-    dandiset = client.get_dandiset("001290") # Charlie Windolf - pulsating probes
-    asset = list(dandiset.get_assets())[0]
-    print(f"getting asset: {asset.path}")
-    s3_url = asset.get_content_url(follow_redirects=1, strip_query=True)
-
-recording = si.read_nwb_recording(
-    file_path = s3_url, 
-    stream_mode='fsspec', 
-)
-
-%matplotlib widget
-si.plot_traces(
-    si.common_reference(
-        si.bandpass_filter(
-            recording.remove_channels(["AP86"])
-        )
-    ),
-    backend="ipywidgets",
-    order_channel_by_depth=True, 
-    clim=(-30,30),
-)
-
-```
-
-Example code to stream a sorting from DANDI:
-
-``` python
-
-from dandi.dandiapi import DandiAPIClient
-import spikeinterface.full as si
-
-dandiset_id = '000582'  # Haagen Waade
-filepath = 'sub-10073/sub-10073_ses-17010302_behavior+ecephys.nwb'  # 450 kB file
-with DandiAPIClient() as client:
-    asset = client.get_dandiset(dandiset_id, 'draft').get_asset_by_path(filepath)
-    s3_url = asset.get_content_url(follow_redirects=1, strip_query=True)
-
-sorting = si.read_nwb_sorting(
-    file_path = s3_url, 
-    stream_mode='fsspec', 
-    electrical_series_path="acquisition/ElectricalSeries",
-)
-```
-
-## Cool stuff
-
-- uv: <https://docs.astral.sh/uv/guides/install-python/>
-- LUSSAC: <https://www.biorxiv.org/content/10.1101/2022.02.08.479192v2>
-- Widgets module: <https://spikeinterface.readthedocs.io/en/stable/modules/widgets.html>
-- Paper about compression: <https://iopscience.iop.org/article/10.1088/1741-2552/acf5a4/meta>
-- Docs about the preprocessing pipeline: <https://spikeinterface.readthedocs.io/en/latest/modules/preprocessing.html#the-preprocessing-pipeline>
-- Docs about containerization: <https://spikeinterface.readthedocs.io/en/latest/modules/sorters.html#running-sorters-in-docker-singularity-containers>
-- SortingView: <https://github.com/magland/sortingview>
-
-## Motion correction
-
-- DREDGE motion correction paper: <https://www.nature.com/articles/s41592-025-02614-5>
-- MEDICINE motion correction paper: <https://www.eneuro.org/content/12/3/ENEURO.0529-24.2025>
-- SpikeInterface motion correction docs: <https://spikeinterface.readthedocs.io/en/latest/how_to/handle_drift.html>
-- Nick's deliberately drifty dataset: <https://figshare.com/articles/dataset/_Imposed_motion_datasets_from_Steinmetz_et_al_Science_2021/14024495>
-
-## Automated curation
-
-- UnitRefine preprint: <https://www.biorxiv.org/content/10.1101/2025.03.30.645770v1>
-- UnitRefine tutorials: <https://spikeinterface.readthedocs.io/en/stable/tutorials_custom_index.html#automated-curation-tutorials>
-- Docs about quality metrics: <https://spikeinterface.readthedocs.io/en/stable/modules/qualitymetrics.html>
 
 

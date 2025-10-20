@@ -28,3 +28,4 @@ format:
 - Intro to Pynapple: <https://pynapple.org/user_guide/01_introduction_to_pynapple.html>
 - Pynapple docs: <https://pynapple.org>
 - Pynapple tutorials: <https://pynapple.org/examples.html>
+- More advanced: GLM-fitting with NeMoS: <https://nemos.readthedocs.io/en/latest/>
